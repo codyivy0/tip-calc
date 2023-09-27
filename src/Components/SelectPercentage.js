@@ -1,8 +1,7 @@
-export default function SelectPercent({percent, setPercent, children }) {
-
-    function handleSelect(e) {
-        setPercent(e.target.value)
-    }
+export default function SelectPercent({ percent, setPercent, children }) {
+  function handleSelect(e) {
+    setPercent(e.target.value);
+  }
 
   return (
     <>
