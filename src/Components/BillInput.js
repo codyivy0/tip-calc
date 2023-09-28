@@ -1,4 +1,5 @@
 export default function BillInput({ bill, setBill }) {
+  
   function handleChange(e) {
     setBill(e.target.value);
   }

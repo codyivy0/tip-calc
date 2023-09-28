@@ -1,12 +1,13 @@
-export default function SelectPercent({ percent, setPercent, children }) {
+export default function SelectPercent({percent, setPercent, children }) {
+    
   function handleSelect(e) {
     setPercent(e.target.value);
   }
 
   return (
     <>
-      <p>{children}</p>
-      <select onChange={handleSelect}>
+      <label>{children}</label>
+      <select value={percent} onChange={handleSelect}>
         <option value="0">Did not enjoy(0%)</option>
         <option value="5">It was just ok(5%)</option>
         <option value="10">Enjoyed it(10%)</option>
